@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakta oss - Studieplattformen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white-600 text-blue-500 py-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <div class="flex items-center space-x-4">
+        <img src="images/student_logo.png" alt="Study Logo" class="h-20">
+        <h1 class="text-2xl font-bold">Studieplattformen</h1>
+      </div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="hover:underline">Hem</a></li>
+          <li><a href="about.html" class="hover:underline">Om oss</a></li>
+          <li><a href="contact.html" class="hover:underline">Kontakta oss</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Kontakta oss -->
+  <section class="py-20 bg-gray-100">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold text-blue-500 text-center">Kontakta oss</h1>
+      <p class="mt-4 text-lg text-gray-700 text-center">Har du frågor eller förslag? Vi skulle gärna höra från dig!</p>
+      <form class="bg-white p-6 shadow-lg rounded-lg max-w-lg mx-auto mt-10">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-bold">Ditt namn</label>
+          <input type="text" id="name" class="w-full mt-2 p-2 border rounded-lg">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-bold">Din e-post</label>
+          <input type="email" id="email" class="w-full mt-2 p-2 border rounded-lg">
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-gray-700 font-bold">Meddelande</label>
+          <textarea id="message" class="w-full mt-2 p-2 border rounded-lg" rows="5" placeholder="Skriv ditt meddelande här..."></textarea>
+        </div>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Skicka</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>

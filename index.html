@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studera & Briljera</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white-600 text-blue-500 py-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <div class="flex items-center space-x-4">
+        <a href="index.html">
+          <img src="images/student_logo.png" alt="Study Logo" class="h-20">
+        </a>
+        <a href="index.html" class="text-2xl font-bold hover:none">Studieplattformen</a>
+      </div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="hover:underline">Hem</a></li>
+          <li><a href="about.html" class="hover:underline">Om oss</a></li>
+          <li><a href="contact.html" class="hover:underline">Kontakta oss</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Framsida -->
+  <section class="bg-blue-100 py-20">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold text-blue-500">Gör dina studier enklare och mer organiserade!</h1>
+      <p class="mt-4 text-lg text-gray-700">Planera, fokusera och nå dina mål med vår plattform.</p>
+      <div class="mt-6 space-x-4">
+        <a href="signup.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Skapa konto</a>
+        <a href="login.html" class="bg-gray-300 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-400">Logga in</a>
+      </div>
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 shadow-lg rounded-lg">
+          <h3 class="text-xl font-bold text-blue-600">Planeringskalender</h3>
+          <p class="mt-2 text-gray-600">Hantera dina deadlines och studietimmar enkelt.</p>
+        </div>
+        <div class="bg-white p-6 shadow-lg rounded-lg">
+          <h3 class="text-xl font-bold text-green-600">Pomodoro Timer</h3>
+          <p class="mt-2 text-gray-600">Arbeta fokuserat med hjälp av tidsintervaller.</p>
+        </div>
+        <div class="bg-white p-6 shadow-lg rounded-lg">
+          <h3 class="text-xl font-bold text-purple-600">Statistik</h3>
+          <p class="mt-2 text-gray-600">Se hur mycket tid du spenderar på dina uppgifter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planeringssida -->
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-2xl font-bold text-center mb-8">Planera dina uppgifter</h2>
+      <form class="bg-white p-6 shadow-lg rounded-lg max-w-lg mx-auto">
+        <div class="mb-4">
+          <label for="task-title" class="block text-gray-700 font-bold">Titel på uppgift</label>
+          <input type="text" id="task-title" class="w-full mt-2 p-2 border rounded-lg" placeholder="e.g., Läs om JavaScript">
+        </div>
+        <div class="mb-4">
+          <label for="deadline" class="block text-gray-700 font-bold">Deadline</label>
+          <input type="datetime-local" id="deadline" class="w-full mt-2 p-2 border rounded-lg">
+        </div>
+        <div class="mb-4">
+          <label for="category" class="block text-gray-700 font-bold">Kategori</label>
+          <select id="category" class="w-full mt-2 p-2 border rounded-lg">
+            <option value="">Välj kategori</option>
+            <option value="python">Webbramverk i Python</option>
+            <option value="ml">Machine Learning</option>
+            <option value="devops">DevOps</option>
+          </select>
+        </div>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Lägg till uppgift</button>
+      </form>
+      <div class="mt-12">
+        <h3 class="text-xl font-bold mb-4">Dina uppgifter</h3>
+        <div class="bg-white p-4 shadow-md rounded-lg">
+          <p class="text-gray-700"><strong>Uppgift:</strong> Läs om React router</p>
+          <p class="text-gray-700"><strong>Deadline:</strong> 2025-02-01 14:00</p>
+          <p class="text-gray-700"><strong>Kategori:</strong> Webbramverk i Python</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-10">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Studieplattformen</p>
+      <p class="mt-2">Följ oss på <a href="#" class="text-blue-400 hover:underline">Facebook</a> och <a href="#" class="text-blue-400 hover:underline">Twitter</a>.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
